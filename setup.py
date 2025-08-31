@@ -6,12 +6,9 @@ setup(
     description='A tool to extract m3u8 URLs from web sources.',
     author='Hiro Watt',
     packages=find_packages(),
-    py_modules=[
-        'apps',
-    ],
     install_requires=[
         'requests-html',
-        'lxml',
+        'lxml_html_clean',
         'asyncio',
         'faster-whisper',
         'ffmpeg-python',
