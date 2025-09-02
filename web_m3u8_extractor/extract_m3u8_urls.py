@@ -16,6 +16,7 @@ async def _extract_m3u8_urls(url):
 		r = await session.get(url)
 		# Render the page to execute JavaScript
 		await r.html.arender()
+        await session.close()
 
 		# Find all script tags and links that might contain m3u8 URLs
 		m3u8_urls = []
